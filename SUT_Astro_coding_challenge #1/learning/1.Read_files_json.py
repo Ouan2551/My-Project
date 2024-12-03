@@ -1,7 +1,10 @@
 import json #import module json
 with open('Challenge2_data.json', 'r') as f:
+    
     #The open() function opens the specified file in read mode ('r').
+    
     data = json.load(f)
+    
     #parses the JSON data from the file and returns it as a Python object
 
 #output data
