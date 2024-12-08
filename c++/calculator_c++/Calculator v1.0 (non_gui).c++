@@ -126,7 +126,7 @@ int main ()
 
 
 //now stuck at problem operator divide and find square root.
-
 //now upper problem can fix now and fix buy in process session i use double instead int
 //and normal modulus (%) is not work in double use fmod for number with decimal like double it better
+
 //sorry bad grammar bro.

@@ -1,5 +1,5 @@
 import numpy #use in Mean and Median
-from scipy import stats #use in Mode
+from scipy import stats
 #Mean => average value
 #Median => mid point value
 #Mode => most common value
