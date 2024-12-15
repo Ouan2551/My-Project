@@ -1,5 +1,5 @@
 import json #import module json
-with open('Challenge2_data.json', 'r') as f:
+with open('G:\Important files Nannaphat\coding\My-project\SUT_Astro_coding_challenge #1\learning/Challenge2_data.json', 'r') as f:
     
     #The open() function opens the specified file in read mode ('r').
     
