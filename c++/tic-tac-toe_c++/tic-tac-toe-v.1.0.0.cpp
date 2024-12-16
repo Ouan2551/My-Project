@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 int input_index(void)
 {
     cout << "Select location you want to place : ";
@@ -12,21 +13,27 @@ int check_index_used(int index)
     vector<int> index_used;
     for (int i = 0; i < 9; i++)
     {
-    if (index == index_used[i])
-    {
-        cout << "You can not use same location" << endl;
-        index = input_index();
-        break;
-    }
-    else
-    {
-        index_used.push_back(index);
-    }
+        if (index == index_used[i])
+        {
+            cout << "You can not use same location" << endl;
+            index = input_index(); index = check_index_used(index);
+            break;
+        }
+        else if (index < 1 || index > 9)
+        {
+            cout << "Please type correct location" << endl;
+            index = input_index(); index = check_index_used(index);
+            break;
+        }
+        else
+        {
+            index_used.push_back(index);
+        }
     }
     return index;
 }
 
-string output_tic_tac_toe(int index, char a[], char used)
+void output_tic_tac_toe(int index, char a[], char used)
 {
     a[index - 1] = used;
 
@@ -34,9 +41,9 @@ string output_tic_tac_toe(int index, char a[], char used)
     {
         cout << a[i] << "|" << a[i+1] << "|" << a[i+2] << endl;
     }
-    
-    return 0;
+    cout << endl;
 }
+
 int main()
 {
     ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
@@ -56,18 +63,16 @@ int main()
     for (int i = 1; i <= 9; i++)
     {
         // for user interface
-        if (i % 2 == 0)
+        if (i % 2 == 1)
         {
-            cout << "Player 2 : "; used = 'x';
+            cout << "Player 1 : "; used = 'X';
         }
         else
         {
-            cout << "Player 1 : "; used = 'o';
+            cout << "Player 2 : "; used = 'O';
         }
-        
         index = input_index(); index = check_index_used(index);
-
-        cout << output_tic_tac_toe(index, a, used) << endl;
+        output_tic_tac_toe(index, a, used);
     }
     
     return 0;
