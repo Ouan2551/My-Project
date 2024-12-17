@@ -67,6 +67,7 @@ double square_root_numbers(double n1, double n2)
 
 int main ()
 {
+    ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
     //user guide
     cout << "this program can only do this operator" << endl;
     cout << "this program can only support double datatype" << endl;
