@@ -2,21 +2,29 @@
 using namespace std;
 int main()
 {
-    int a[9] = {0}; vector<int> sum;
+    ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+    int a[9] = {0}, sum = 0;
     for (int i = 0; i < 9; i++)
     {
-        cin >> a[i];
+        cin >> a[i]; sum += a[i];
     }
     for (int i = 0; i < 9; i++)
     {
-        for (int j = 0; j <= i; j++)
+        for (int j = i + 1; j < 9; j++)
         {
-            sum[i] += a[j];
+            if (sum - 100 == a[i] + a[j])
+            {
+                for (int k = 0; k < 9; k++)
+                {
+                    if (k == i || k == j)
+                    {
+                        continue;
+                    }
+                    cout << a[k] << endl;
+                }
+                return 0;
+            }
         }
-    }
-    for (int i = 0; i < 9; i++)
-    {
-        cout << sum[i] << endl;
     }
     return 0;
 }
