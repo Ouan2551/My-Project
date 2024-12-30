@@ -1,5 +1,5 @@
 import numpy as np
-import matplotlib as plt
+import matplotlib.pyplot as plt
 import json
 import math
 
@@ -22,8 +22,9 @@ for i, (z) in enumerate(zip(z_values), start=1):
     v_values.append(v)
     
 # use for test array store value
-for i in d_values:
-    print(i)
-for i in v_values:
-    print(i)
-    
+plt.xlabel("d")
+plt.ylabel("v")
+plt.title('d and v graph test version')
+
+plt.plot(d_values, v_values)
+plt.show()

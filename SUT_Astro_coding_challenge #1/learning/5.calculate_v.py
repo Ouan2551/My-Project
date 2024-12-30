@@ -1,5 +1,5 @@
 import json
-import matplotlib as plt
+import matplotlib.pyplot as plt
 import math
 import numpy as np
 z = 0.0036759669738346545

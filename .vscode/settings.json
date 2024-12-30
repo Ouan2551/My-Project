@@ -63,5 +63,10 @@
     "set": "cpp",
     "format": "cpp",
     "iosfwd": "cpp"
-  }
+  },
+  "cSpell.words": [
+    "Magitude",
+    "xlabel",
+    "ylabel"
+  ]
 }
