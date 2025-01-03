@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import json
 import math
 
-with open("D:\Important files Nannaphat\coding\My-project\SUT_Astro_coding_challenge #1\learning\Challenge2_data.json", "r") as file:
+with open("D:\Important files Nannaphat\coding\My-project\SUT_Astro_coding_challenge #1\Challenge2_data.json", "r") as file:
     data = json.load(file)
 
 m_values = data["Apparent Magitude (m)"]
@@ -28,11 +28,12 @@ v_values.sort()
 # use for test array store value
 plt.xlabel("d")
 plt.ylabel("v")
-plt.title('d and v graph test version')
+plt.title('d and v graph')
 
+# show graph
 plt.plot(d_values, v_values)
 plt.show()
 
-for i, (v_values,d_values) in enumerate(zip(v_values, d_values), start=1):
-    t = d_values/v_values
+for d, v in zip(d_values, v_values):
+    t = d / v
     print(t)
