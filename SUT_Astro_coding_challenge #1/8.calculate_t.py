@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import json
 import math
 
-with open("D:\Important files Nannaphat\coding\My-project\SUT_Astro_coding_challenge #1\Challenge2_data.json", "r") as file:
+with open("D:\Important files Nannaphat\coding\My-project\SUT_Astro_coding_challenge #1\learning\Challenge2_data.json", "r") as file:
     data = json.load(file)
 
 m_values = data["Apparent Magitude (m)"]
