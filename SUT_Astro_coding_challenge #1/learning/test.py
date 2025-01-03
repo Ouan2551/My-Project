@@ -22,7 +22,7 @@ for m, M in zip(m_values, M_values):
 
 # Calculate velocity 'v'
 for z in z_values:
-    v = (3 * 10**8) * z  # Correct exponentiation
+    v = (3 * 10**8) * z  # Correct exponentiation operator
     v_values.append(v)
 
 # Plot the graph
