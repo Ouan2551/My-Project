@@ -1,9 +1,9 @@
 import json #import module json
-with open('G:\Important files Nannaphat\coding\My-project\SUT_Astro_coding_challenge #1\learning/Challenge2_data.json', 'r') as f:
+with open("D:\Important files Nannaphat\coding\My-project\SUT_Astro_coding_challenge #1\Challenge2_data.json", "r") as file:
     
     #The open() function opens the specified file in read mode ('r').
     
-    data = json.load(f)
+    data = json.load(file)
     
     #parses the JSON data from the file and returns it as a Python object
 
